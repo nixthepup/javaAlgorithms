@@ -43,11 +43,12 @@ public class LargestAndSmallest {
 			System.out.print("Enter a number: ");			
 			value = input.nextInt();
 			if(value != -99){
-				if (value > smallest){
-					largest = value;
+				if (value < smallest){ // if the user enterend number is less then the stored smallest number changes smallest to the new user ented number
+					smallest =value;
 				}
-				else{
-					smallest =value;					
+				else if(value > largest){
+					
+					largest = value;				
 				}		
 			}
 		}
